@@ -1,0 +1,82 @@
+{
+	"info": {
+		"_postman_id": "2ac91a23-086c-4d0a-b5b9-992766bd6a23",
+		"name": "GIS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27367960"
+	},
+	"item": [
+		{
+			"name": "Get Roads",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "login",
+						"value": "v4.public.eyJhbGlhcyI6IkdhaXprYSBXaXNudSBQcmF3aXJhIiwiZXhwIjoiMjAyNC0xMi0xNFQwMToyNjo1NVoiLCJpYXQiOiIyMDI0LTEyLTEzVDA3OjI2OjU1WiIsImlkIjoiNjI4OTUzMzE5NDI2ODYiLCJuYmYiOiIyMDI0LTEyLTEzVDA3OjI2OjU1WiJ98fCth10u2rntBJwWNbZn4w5sAA1jUTjkb6vyZ0C6gxdeEvOWTLb8bwPn5WTDURT92yQWnkIeHsaD0FZpGoqvDA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"long\": 107.5758500037501,\r\n    \"lat\": -6.874720427234501,\r\n    \"max_distance\": 600\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://asia-southeast2-awangga.cloudfunctions.net/itungin/roads",
+					"protocol": "https",
+					"host": [
+						"asia-southeast2-awangga",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"itungin",
+						"roads"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Region",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "login",
+						"value": "v4.public.eyJhbGlhcyI6IkdhaXprYSBXaXNudSBQcmF3aXJhIiwiZXhwIjoiMjAyNC0xMi0xNFQwMToyNjo1NVoiLCJpYXQiOiIyMDI0LTEyLTEzVDA3OjI2OjU1WiIsImlkIjoiNjI4OTUzMzE5NDI2ODYiLCJuYmYiOiIyMDI0LTEyLTEzVDA3OjI2OjU1WiJ98fCth10u2rntBJwWNbZn4w5sAA1jUTjkb6vyZ0C6gxdeEvOWTLb8bwPn5WTDURT92yQWnkIeHsaD0FZpGoqvDA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"long\": 107.5758500037501,\r\n    \"lat\": -6.874720427234501\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://asia-southeast2-awangga.cloudfunctions.net/itungin/region",
+					"protocol": "https",
+					"host": [
+						"asia-southeast2-awangga",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"itungin",
+						"region"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
